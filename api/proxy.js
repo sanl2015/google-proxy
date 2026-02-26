@@ -7,7 +7,7 @@ export default async function handler(req) {
   
   // 核心修正：构造指向 Google 的完整 URL
   // 确保路径 (pathname) 和查询参数 (searchParams) 都被带上
-  const targetHost = 'ipv6.google.com';
+  const targetHost = 'ipv6.google.hk';
   const targetUrl = new URL(pathname + searchParams.toString(), `https://${targetHost}`);
   
   const myHost = req.headers.get('host');
